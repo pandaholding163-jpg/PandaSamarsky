@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои ссылки</title>
+
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      font-family: Arial, sans-serif;
+      color:#ffffff;
+      background:
+        radial-gradient(900px 480px at 50% 15%, #2b2f55 0%, rgba(43,47,85,0) 60%),
+        radial-gradient(800px 500px at 20% 85%, #1b5d7a 0%, rgba(27,93,122,0) 55%),
+        radial-gradient(900px 600px at 85% 85%, #3a1b6e 0%, rgba(58,27,110,0) 55%),
+        #06060a;
+    }
+
+    .card{
+      width:100%;
+      max-width:440px;
+      background: rgba(20,20,28,.72);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 20px 70px rgba(0,0,0,.65);
+      border-radius:18px;
+      padding:20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      margin-bottom:14px;
+    }
+
+    .avatar{
+      width:68px;
+      height:68px;
+      border-radius:50%;
+      object-fit:cover;
+      border:1px solid rgba(255,255,255,.10);
+      background:#1c1c24;
+      flex:0 0 auto;
+    }
+
+    h1{
+      margin:0;
+      font-size:18px;
+      line-height:1.2;
+    }
+
+    .bio{
+      margin-top:6px;
+      font-size:13px;
+      line-height:1.35;
+      color: rgba(255,255,255,.82);
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 14px;
+      margin-top:10px;
+      border-radius:14px;
+      text-decoration:none;
+      color:#fff;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      transition: .15s ease;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.10);
+    }
+
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+    }
+
+    .tg{background:#2AABEE;}
+    .yt{background:#FF0033;}
+    .tt{background:#25F4EE;}
+    .ig{background:#D62976;}
+    .vk{background:#0077FF;}
+    .wa{background:#25D366;}
+
+    .footer{
+      margin-top:14px;
+      text-align:center;
+      font-size:12px;
+      color: rgba(255,255,255,.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="top">
+      <img class="avatar" src="avatar.jpg" alt="Аватар" />
+      <div>
+        <h1>ТВОЁ ИМЯ / НИК</h1>
+        <div class="bio">Короткое описание (1–2 строки)</div>
+      </div>
+    </div>
+
+    <a class="btn" href="https://t.me/USERNAME" target="_blank">
+      <span class="dot tg"></span>
+      Telegram
+    </a>
+
+    <a class="btn" href="https://www.youtube.com/@USERNAME" target="_blank">
+      <span class="dot yt"></span>
+      YouTube
+    </a>
+
+    <a class="btn" href="https://www.tiktok.com/@USERNAME" target="_blank">
+      <span class="dot tt"></span>
+      TikTok
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/USERNAME/" target="_blank">
+      <span class="dot ig"></span>
+      Instagram
+    </a>
+
+    <a class="btn" href="https://vk.com/USERNAME" target="_blank">
+      <span class="dot vk"></span>
+      ВКонтакте
+    </a>
+
+    <a class="btn" href="https://wa.me/79990000000" target="_blank">
+      <span class="dot wa"></span>
+      WhatsApp
+    </a>
+
+    <div class="footer">© 2026</div>
+
+  </div>
+</body>
+</html>
